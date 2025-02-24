@@ -1,0 +1,22 @@
+<table class="table table-striped table-bordered border-success table-responsive">
+<thead class="table-dark">
+    <tr>    
+        <th scope="col">Id</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Acciones</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let product of data">
+        <th>{{product.idProduct }}</th>
+        <td>{{product.productName}}</td>
+        <td>{{product.productDescription}}</td>
+        <td>{{product.productPrice}}</td>
+        <td>
+            <a [routerLink]="['/deleteProduct', product.idProduct]" class="btn btn-danger">Eliminar</a>
+        </td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,12 @@
+.container-md{
+    padding-top: 4.3vh;
+    margin-left:5vw;
+}
+.container-md h2{
+    margin-right: 10vw;
+}
+.container-lg{
+    margin-top: 5vh;
+    max-width: 92vw;
+    max-height: 65vh;
+}

@@ -1,0 +1,15 @@
+<div class="titulo container-md">
+<h2>Eliminar producto</h2>
+</div>
+<div class=" producto container-lg" style="width: 18rem;">
+    <div class="card">    
+        <div class="card-header">Producto a eliminar</div>
+            <ul class="list-group list-group-flush" *ngIf="producto">
+                <li class="list-group-item">Id de producto: {{ producto.idProduct }}</li>
+                <li class="list-group-item">Producto: {{ producto.productName }}</li>
+                <li class="list-group-item">Descripcion: {{ producto.productDescription }}</li>
+                <li class="list-group-item">Precio: {{ producto.productPrice }}</li>
+            </ul>
+    </div>
+    <a class="btn btn-danger">Eliminar producto</a>
+</div>

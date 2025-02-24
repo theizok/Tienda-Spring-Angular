@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre producto</label>
+      <input type="text" class="form-control" id="productName" formControlName="productName" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Descripcion</label>
+      <input type="text" class="form-control" id="productDescription" formControlName="productDescription">
+    </div>
+    <div class="mb-4">
+        <label class="form-label">Precio</label>
+        <input type="text" class="form-control" id="productPrice" formControlName="productPrice">
+      </div>
+    <button type="submit" [disabled]="!form.valid" class="btn btn-success">Agregar</button>
+  </form>
